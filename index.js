@@ -29,7 +29,7 @@ app.get("/products", (req, res) => {
   res.send(products);
 });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 const uri = process.env.DB_URI;
 app.listen(port, console.log(`server running on port ${port}`));
 

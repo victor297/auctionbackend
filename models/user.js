@@ -21,6 +21,7 @@ const userSchema = new mongoose.Schema(
       minLength: 3,
       maxLength: 1024,
     },
+    image: { type: Object, required: true },
     isAdmin: { type: Boolean, default: false },
   },
   { timestamps: true }

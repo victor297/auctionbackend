@@ -33,6 +33,7 @@ usersRoute.get("/find/:id", async (req, res) => {
       name: user.name,
       userName: user.userName,
       isAdmin: user.isAdmin,
+      image: user.image,
     });
   } catch (error) {
     res.status(500).send(error);
